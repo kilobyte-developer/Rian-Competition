@@ -8,5 +8,5 @@ def transcribe_audio(file_path):
         text = recognizer.recognize_google(audio_data)
         return text
 
-transcript = transcribe_audio("input.wav")
+transcript = transcribe_audio("test_1.wav")
 print("Transcript:", transcript)
