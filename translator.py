@@ -9,7 +9,7 @@ def translate_text(text, target_languages):
     return translations
 
 transcript = " AI having a very busy here to talk about let's get started to make our products radically more helpful for a while which generative we are taking the next step using a combination of semantic understanding and generally where you can do much more with a new experience call magic"
-target_languages = ['es'] #should give options for multiple languages
+target_languages = ['es'] 
 translations = translate_text(transcript, target_languages)
 
 for lang, translation in translations.items():

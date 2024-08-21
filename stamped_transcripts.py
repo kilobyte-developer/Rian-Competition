@@ -3,15 +3,12 @@ import speech_recognition as sr
 def transcribe_audio_with_timestamps(file_path):
     recognizer = sr.Recognizer()
 
-    # Add the path to your input file here
     with sr.AudioFile(file_path) as source:
         audio_data = recognizer.record(source)
-        duration = source.DURATION  # Get the duration of the audio file
+        duration = source.DURATION  
 
-        # Transcribe audio with Google Speech Recognition
         text = recognizer.recognize_google(audio_data)
 
-        # Return the transcribed text and duration
         return text, duration
 
 def create_transcript_with_timestamps(transcript, duration, output_path):
